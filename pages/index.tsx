@@ -41,7 +41,7 @@ export default function Gallery({ images }: { images: Image[] }) {
 }
 
 function BlurImage({ image }: { image: Image }) {
-  const [isLoading, setLoading] = useState([])
+  const [isLoading, setLoading] = useState([] as any);
 
   return (
     <a href={image.href} className="group">
