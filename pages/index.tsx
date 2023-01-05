@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { createClient } from '@supabase/supabase-js'
-
+import BlurImage from '../components/BlurImage'
 export async function getStaticProps() {
   const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL || '',
